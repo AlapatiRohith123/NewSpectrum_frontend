@@ -1,0 +1,114 @@
+html{
+    height: 100%;
+}
+body{
+    margin: 0;
+    background-image: url("three.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+div.nav1 {
+    background-color: black;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+div.nav1 p a{
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+div.nav1 input{
+    padding: 16px 16px;
+}
+div.nav1 p a:hover{
+    background-color: gray;
+}
+#ham{
+    display: none;
+}
+.right{
+    float: right;
+}
+#notifications{
+    float: left;
+}
+@media screen and (max-width:576px){
+    #notifications{
+        float: none;
+    }
+    div.nav1 p, div.nav1 input{
+        display: none;
+        float: none;
+    }
+    body{
+        margin-top: 30px;
+    }
+    #ham{
+        display: block;
+    }
+}
+.filter{
+    width: 18%;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+p.content1 a{
+    display: block;
+    width: 40%;
+    padding: 8% 0;
+    font-size: 25px;
+    margin: auto;
+    border: 2px solid black;
+    text-align: center;
+    background-color: rgba(134, 187, 195,0.5);
+    text-decoration: none;
+    color: black;
+}
+p.content1 a:hover{
+    font-size: 30px;
+}
+.content2 a{
+    display: inline-block;
+    width: 40%;
+    height: 280px;
+    overflow: hidden;
+    padding: 6px;
+    margin: 15px;
+    font-size: 20px;
+    border: 2px solid black;
+    text-align: center;
+    background-color: rgba(134, 187, 195,0.5);
+    text-decoration: none;
+    color: black;
+}
+.content3{
+    padding: 10px;
+    font-size: 20px;
+}
+#solution{
+    height: 270px;
+    width: 100%;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+}
+#solution2{
+    display: none;
+    width: 100%;
+    height:200px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+}
+.approve{
+    margin-left: 20%;
+    font-size: large;
+}
+.cancel{
+    margin-right: 20%;
+    float: right;
+    font-size: large;
+}
